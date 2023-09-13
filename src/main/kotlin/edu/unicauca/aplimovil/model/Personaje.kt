@@ -24,6 +24,8 @@ open class Personaje(val name:String) {
         if(!escudo)
             vida-=reduccion
     }
-
+    open fun presentarse(): String{
+        return "Soy un personaje llamado $name"
+    }
 
 }
