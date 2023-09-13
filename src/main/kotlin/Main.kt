@@ -29,5 +29,8 @@ fun main(args: Array<String>) {
 
     println(guerrerodos.vida)
 
-    
+    guerrero.subirNivel(21)
+    println(guerrero.mostrarNivel())
+
+
 }

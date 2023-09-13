@@ -1,0 +1,13 @@
+/build/
+/captures/
+/local.properties
+.gradle/
+.idea/workspace.xml
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/vcs.xml
+.idea/gradle.xml
+.idea/misc.xml
+*.iml
+*.log

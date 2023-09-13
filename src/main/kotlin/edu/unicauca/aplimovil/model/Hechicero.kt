@@ -18,7 +18,7 @@ class Hechicero(name:String):Personaje(name) {
     }
 
     override fun presentarse(): String {
-        return "Soy un guerrero llamado $name"
+        return "Soy un hechicero llamado $name"
     }
 
 }

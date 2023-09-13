@@ -7,10 +7,12 @@ open class Personaje(val name:String) {
                 field = value
             }
         }
-    private var nivel: Int = 1
+    private var nivel = 1
+
     var posX:Int = 0
     var posY:Int = 0
     var escudo:Boolean = false
+    var experiencia = 0
 
     fun mover(movX:Int, movY:Int){
         posX+=movX
@@ -27,6 +29,18 @@ open class Personaje(val name:String) {
     }
     open fun presentarse(): String{
         return "Soy un personaje llamado $name"
+    }
+    fun subirNivel(experiencia:Int){
+        if (experiencia>=10){
+            nivel = 2
+        }
+        if (experiencia>=20){
+            nivel = 3
+        }
+
+    }
+    fun mostrarNivel():String{
+        return "Mi nivel $nivel"
     }
 
 }
