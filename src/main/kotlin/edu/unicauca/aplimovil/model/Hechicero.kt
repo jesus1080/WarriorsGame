@@ -1,6 +1,6 @@
 package edu.unicauca.aplimovil.model
 
-class Hechicero(nombre:String):Personaje(nombre) {
+class Hechicero(name:String):Personaje(name) {
     var mana:Int = 1
         set(value) {
             if(value in 1..50){
@@ -15,6 +15,10 @@ class Hechicero(nombre:String):Personaje(nombre) {
 
     fun hechizar(enemigo:Personaje){
         enemigo.escudo = false
+    }
+
+    override fun presentarse(): String {
+        return "Soy un guerrero llamado $name"
     }
 
 }

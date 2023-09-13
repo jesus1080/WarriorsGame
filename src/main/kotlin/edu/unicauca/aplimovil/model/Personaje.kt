@@ -7,6 +7,7 @@ open class Personaje(val name:String) {
                 field = value
             }
         }
+    private var nivel: Int = 1
     var posX:Int = 0
     var posY:Int = 0
     var escudo:Boolean = false
